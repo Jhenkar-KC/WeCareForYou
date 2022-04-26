@@ -7,6 +7,7 @@ package com.iabug.wecareforyou;
             import android.view.View;
             import android.widget.Button;
             import android.widget.EditText;
+            import android.widget.TextView;
             import android.widget.Toast;
             import androidx.annotation.NonNull;
             import androidx.appcompat.app.AppCompatActivity;
@@ -15,12 +16,15 @@ package com.iabug.wecareforyou;
             import com.google.firebase.auth.AuthResult;
             import com.google.firebase.auth.FirebaseAuth;
 
+            import org.w3c.dom.Text;
+
 public class LoginActivity extends AppCompatActivity {
 
 
     private Button reset_password;
 
-    private Button sign_in_details_button, register_button,reset_password_button;
+    private Button sign_in_details_button,reset_password_button;
+    private TextView signuptext,forgottext;
     private EditText email_TV, password_TV;
     private FirebaseAuth auth;
 
@@ -38,20 +42,27 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         email_TV = (EditText) findViewById(R.id.loginemailidInput);
         password_TV = (EditText) findViewById(R.id.logininpasswordInput);
-//        register_button = (Button) findViewById(R.id.LoginButton);
+        signuptext = (TextView) findViewById(R.id.loginbottomtext);
         sign_in_details_button = (Button) findViewById(R.id.LoginButton);
+        forgottext = (TextView) findViewById(R.id .forgotpasswordtext) ;
 //        reset_password = (Button) findViewById(R.id.reset_password);
 
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-//        register_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
-//            }
-//        });
+        signuptext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
+            }
+        });
+        forgottext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ResetpasswordActivity.class));
+            }
+        });
 //
 //        reset_password.setOnClickListener(new View.OnClickListener() {
 //            @Override

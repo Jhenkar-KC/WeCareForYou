@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/drawable/roundedButton.xml" value="0.1545" />
         <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/drawable/roundedbutton.xml" value="0.169" />
         <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/drawable/roundedbutton2.xml" value="0.169" />
         <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/layout/activity_sign_up.xml" value="0.19895833333333332" />
+        <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/layout/activity_resetpassword.xml" value="0.19895833333333332" />
+        <entry key="..\:/Project/Application/WeCareForYou/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
       </map>
     </option>
   </component>
